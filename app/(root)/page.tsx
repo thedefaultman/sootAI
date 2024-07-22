@@ -1,6 +1,6 @@
 "use client";
 
-import PodcastCard from '@/components/podcastCard'
+import PodcastCard from '@/components/PodcastCard'
 import { Button } from '@/components/ui/button'
 import React from 'react'
 import { useQuery } from "convex/react";
@@ -24,7 +24,7 @@ const Home = () => {
               {trendingPodcasts?.map(({ _id, podcastTitle, podcastDescription, imageUrl }) => (
                 <PodcastCard 
                   key={_id}
-                  imgURL={imageUrl}
+                  imgUrl={imageUrl}
                   title={podcastTitle}
                   description={podcastDescription}
                   podcastId={_id}
