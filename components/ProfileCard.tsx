@@ -86,7 +86,7 @@ const ProfileCard = ({
               height={20}
               alt="random play"
             />{" "}
-            &nbsp; Play a random podcast
+            &nbsp; Play a random soot
           </Button>
         )}
       </div>

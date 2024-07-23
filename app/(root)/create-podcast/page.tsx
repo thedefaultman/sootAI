@@ -92,7 +92,7 @@ const CreatePodcast = () => {
         audioStorageId: audioStorageId!,
         imageStorageId: imageStorageId!,
       })
-      toast({ title: 'Podcast created'})
+      toast({ title: 'Soot created'})
       setisSubmitting(false)
       router.push('/')
     } catch (error) {
@@ -115,7 +115,7 @@ const CreatePodcast = () => {
               <FormItem className=" flex flex-col gap-2.5">
                 <FormLabel className=" text-16 font-bold text-white-1">Title</FormLabel>
                 <FormControl>
-                  <Input className="input-class focus-visible:ring-offset-orange-1" placeholder="Your Podcast Name" {...field} />
+                  <Input className="input-class focus-visible:ring-offset-orange-1" placeholder="Your Soots Name" {...field} />
                 </FormControl>
                 <FormMessage className=" text-white-1"/>
               </FormItem>
@@ -149,7 +149,7 @@ const CreatePodcast = () => {
               <FormItem className=" flex flex-col gap-2.5">
                 <FormLabel className=" text-16 font-bold text-white-1">Description</FormLabel>
                 <FormControl>
-                  <Textarea className="input-class focus-visible:ring-offset-orange-1" placeholder="Write a short podcast descripton" {...field} />
+                  <Textarea className="input-class focus-visible:ring-offset-orange-1" placeholder="Write a short Soot descripton" {...field} />
                 </FormControl>
                 <FormMessage className=" text-white-1"/>
               </FormItem>
@@ -183,7 +183,7 @@ const CreatePodcast = () => {
                     <Loader size={20} className=" animate-spin ml-2"/>
                   </>
                 ) : (
-                  'Submit & Publish Podcast'
+                  'Submit & Publish Soot'
                 )}
               </Button>
             </div>
