@@ -48,7 +48,7 @@ const RightSidebar = () => {
       </section>
 
       <section className='flex flex-col gap-8 pt-12'>
-        <Header headerTitle='Top Podcasters'/>
+        <Header headerTitle='Top Sooters'/>
         <div className=' flex flex-col gap-6'>
           {topPodcasters?.slice(0, 4).map((podcaster) => (
             <div key={podcaster._id} className='flex cursor-pointer justify-between' onClick={() => router.push(`/profile/${podcaster.clerkId}`)}>
